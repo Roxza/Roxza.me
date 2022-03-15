@@ -1,0 +1,84 @@
+{
+    "tech": [
+        {
+            "name": "Bootstrap",
+            "path": "/assets/dev/bootstrap.svg"
+        },
+        {
+            "name": "Css",
+            "path": "/assets/dev/css.svg"
+        },
+        {
+            "name": "Github",
+            "path": "/assets/dev/github.svg"
+        },
+        {
+            "name": "Html",
+            "path": "/assets/dev/html.svg"
+        },
+        {
+            "name": "Javascript",
+            "path": "/assets/dev/javascript.svg"
+        },
+        {
+            "name": "MongoDB",
+            "path": "/assets/dev/mongodb.svg"
+        },
+        {
+            "name": "NextJS",
+            "path": "/assets/dev/nextjs.svg"
+        },
+        {
+            "name": "React",
+            "path": "/assets/dev/react.svg"
+        },
+        {
+            "name": "Sass",
+            "path": "/assets/dev/sass.svg"
+        },
+        {
+            "name": "Php",
+            "path": "/assets/dev/php.svg"
+        },
+        {
+            "name": "TypeScript",
+            "path": "/assets/dev/typescript.svg"
+        },
+        {
+            "name": "Vercel",
+            "path": "/assets/dev/vercel.svg"
+        },
+        {
+            "name": "Vue",
+            "path": "/assets/dev/vue.svg"
+        },
+        {
+            "name": "NuxtJS",
+            "path": "/assets/dev/nuxt.svg"
+        },
+        {
+            "name": "Bulma",
+            "path": "/assets/dev/bulma.svg"
+        },
+        {
+            "name": "Tailwind",
+            "path": "/assets/dev/tailwind.svg"
+        },
+        {
+            "name": "Express",
+            "path": "/assets/dev/express.svg"
+        },
+        {
+            "name": "NodeJS",
+            "path": "/assets/dev/node.svg"
+        },
+        {
+            "name": "Yarn",
+            "path": "/assets/dev/yarn.svg"
+        },
+        {
+            "name": "Electron",
+            "path": "/assets/dev/electron.svg"
+        }
+    ]
+}

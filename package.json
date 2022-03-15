@@ -1,0 +1,32 @@
+{
+  "name": "roxza.me",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "fm": "prettier --write ."
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.5.0",
+    "@windui/snackbar": "^2.0.4",
+    "discohook": "^1.0.4",
+    "isomorphic-unfetch": "^3.1.0",
+    "next": "12.1.0",
+    "nextjs-progressbar": "^0.0.14",
+    "prettier": "^2.5.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "swr": "^1.2.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
+    "postcss": "^8.4.8",
+    "tailwindcss": "^3.0.23"
+  }
+}
