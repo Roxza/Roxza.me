@@ -3,7 +3,7 @@ import Cookies from "universal-cookie";
 
 export default function darkTheme() {
   const cookies = new Cookies();
-  const [isTheme, setTheme] = useState(cookies.get("theme") || "dark");
+  const [isTheme, setTheme] = useState(cookies.get("theme") || "light");
   const colorTheme = isTheme === "dark" ? "light" : "dark";
   useEffect(
     () => {

@@ -1,10 +1,10 @@
 import { FiGithub } from "react-icons/fi";
 const Repositories = (props) => {
-  const { repos, serity } = props;
+  const { repos } = props;
 
   return (
     <>
-      {[...repos, ...serity]
+      {repos
         .sort((a, b) => {
           return b.stargazers_count - a.stargazers_count;
         })

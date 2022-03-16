@@ -2,8 +2,8 @@
 import Project from "../components/Card/project";
 import ProjectsLoader from "../components/Loader/Projects";
 import swr from "../lib/swr";
-export default function Projects({}) {
-  const { data: _projects } = swr("https://api.roxza.me/api/personal");
+export default function Projects() {
+  const { data: _projects } = swr("api/data");
   const data = _projects ? _projects.data : null;
   return (
     <>

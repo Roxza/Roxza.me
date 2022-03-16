@@ -1,31 +1,8 @@
 import React from "react";
 import swr from "../lib/swr";
-import { FiGithub } from "react-icons/fi";
-import {
-  SiDiscord,
-  SiSpotify,
-  SiTwitter,
-  SiInstagram,
-  SiAnilist,
-} from "react-icons/si";
-import { GoMail } from "react-icons/go";
 
 export default function About() {
-  const [color, setColor] = React.useState("239, 68, 68");
-  function generatorColor() {
-    const out = [
-      "244, 115, 185",
-      "14, 62, 218",
-      "239, 68, 68",
-      "14, 24, 95",
-      "0, 173, 181",
-      "13, 98, 122",
-      "67, 73, 110",
-    ];
-    setColor(out[Math.floor(Math.random() * out.length)]);
-    return true;
-  }
-  const { data: _user } = swr("https://api.roxza.me/api/personal");
+  const { data: _user } = swr("api/data");
   const user = _user ? _user.data : null;
   return (
     <>
@@ -36,16 +13,18 @@ export default function About() {
               className="rounded-full w-40"
               src={`https://cdn.discordapp.com/avatars/${user.user.id}/${user.user.avatar}`}
             />
+            <h3 className="pt-4 dark:text-gray-300 text-black pb-2 text-2xl font-bold leading-8 tracking-tight">
+              {user.user.username}#{user.user.discriminator}
+            </h3>
           </>
         ) : (
           <>
-            {" "}
             <div className="animate-pulse border border-gray-700 bg-gray-700 w-[160px] h-[160px] animate-pulse rounded-full" />
+            <h3 className="pt-4 dark:text-gray-300 text-black pb-2 text-2xl font-bold leading-8 tracking-tight">
+              Roxza#0000
+            </h3>
           </>
         )}
-        <h3 className="pt-4 dark:text-gray-300 text-black pb-2 text-2xl font-bold leading-8 tracking-tight">
-          Roxza#0002
-        </h3>
         <div className="dark:text-gray-300 text-black">Backend Developer</div>
       </div>
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
@@ -74,10 +53,9 @@ export default function About() {
           <br />
 
           <p className="text-2xl">
-            Thank you for reading this article.{" "}
+            Thank you for reading this article.
             <i
-              style={{ color: "rgb(" + color + ")" }}
-              onClick={() => generatorColor()}
+              style={{ color: "rgb(239, 68, 68)" }}
               className="cursor-pointer fas fa-heart mx-0.5"
             ></i>
           </p>

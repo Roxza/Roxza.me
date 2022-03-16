@@ -15,7 +15,7 @@ export default function BookmarksLoader() {
 
           <div className="animate-pulse grid grid-cols-1 md:grid-cols-3 gap-3">
             {Array.from({ length: 6 }).map((item, index) => (
-              <div className="rounded-lg space-y-2 w-[220px]">
+              <div key={index} className="rounded-lg space-y-2 w-[220px]">
                 <div className="bg-gray-300 dark:bg-[#080808] dark:hover:bg-[#101010] hover:-translate-y-[8px] transition-all duration-200 bg-brand-black rounded-lg">
                   <div className="w-[220px] h-[126px] bg-slate-700 rounded" />
                 </div>

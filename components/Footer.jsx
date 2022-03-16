@@ -15,7 +15,7 @@ const Footer = () => {
                     href="https://github.com/Roxza/Roxza.me"
                     target="_blank"
                     rel="noreferrer"
-                    class="hover:text-purple-500 dark:hover:text-[#EFBF9C] transition-all duration-200"
+                    className="hover:text-purple-500 dark:hover:text-[#EFBF9C] transition-all duration-200"
                   >
                     This website is open source on GitHub.
                   </a>

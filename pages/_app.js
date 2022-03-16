@@ -5,7 +5,7 @@ import NextNProgress from "nextjs-progressbar";
 import Layout from "../components/Layout";
 import "../public/assets/css/globals.css";
 
-function MyApp({ Component, pageProps }) {
+function RoxzaMe({ Component, pageProps }) {
   const [loading, setLoading] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
   const router = useRouter();
@@ -24,4 +24,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default RoxzaMe;

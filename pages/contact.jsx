@@ -107,11 +107,9 @@ export default function contact() {
               <div className="flex items-center justify-center py-5">
                 <button
                   type="submit"
-                  className="text-center bg-gray-400 hover:bg-gray-500 text-black dark:bg-zinc-500/5 dark:hover:bg-zinc-500/10 dark:text-white w-32 h-10 cursor-pointer py-1.5 px-3 rounded-md transition-all duration-200 px-4 py-2 rounded-lg"
+                  className="text-center bg-gray-400 hover:bg-gray-500 text-black dark:bg-zinc-500/5 dark:hover:bg-zinc-500/10 dark:text-white w-32 h-10 cursor-pointer py-1.5 px-3 rounded-md transition-all duration-200"
                 >
-                  <a style={{ fontSize: "17px" }} className="">
-                    Submit
-                  </a>
+                  <a style={{ fontSize: "17px" }}>Submit</a>
                 </button>
               </div>
             </form>

@@ -87,9 +87,7 @@ const HomeLoader = () => {
               >
                 <div className="h-20 bg-gray-300 dark:bg-[#080808] dark:hover:bg-[#101010] py-4 px-6 bg-brand-black rounded-lg">
                   <div className="flex flex-row w-full">
-                    <p className="text-sm font-bold text-gray-600">
-                      <div className="h-10 w-[20px] bg-slate-700 rounded col-span-2" />
-                    </p>
+                    <div className="text-sm font-bold h-10 w-[20px] bg-slate-700 rounded col-span-2" />
                     <div className="space-y-2">
                       <div className="h-10 mr-2 w-[200px] bg-slate-700 rounded col-span-2" />
                     </div>
