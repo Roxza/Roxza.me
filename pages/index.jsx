@@ -24,7 +24,7 @@ export default function Home() {
         <>
           <div id="hero" className="p-10">
             <h1 className="font-bold text-2xl md:text-5xl tracking-tight mb-2 text-black dark:text-white">
-              <span className="text-purple-500">Howdy</span>, I’m Roxza
+              <span className="text-purple-500">Howdy</span>, I’m Roxza ✌️
             </h1>
             <p className="text-lg leading-7 text-black dark:text-white">
               Hello, I`m a backend developer, I`m a 16 year old high school
