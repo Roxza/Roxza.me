@@ -3,7 +3,7 @@
 <h1 align="center">Personal Website</h1>
 <h6 align="center">Developed with ❤️ by <a href="https://roxza.me">Roxza</a></h6>
 
-<img src="https://i.ibb.co/JRWPvGM/indir.png"/>
+<img src="https://i.imgur.com/WxygwYT.png"/>
 
 # 📝 Usage
 
