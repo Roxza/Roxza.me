@@ -34,6 +34,9 @@ const Header = () => {
         href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css"
         rel="stylesheet"
       />
+      <audio id="music">
+        <source src="/assets/music/music.mp3" type="audio/mpeg" />
+      </audio>
       <nav className="flex items-center justify-between w-full max-w-4xl p-8 mx-auto sticky-navbg-black bg-opacity-60 text-gray-100">
         <div className="flex items-center" style={{ fontSize: "15px" }}>
           <a href="https://github.com/Roxza">
