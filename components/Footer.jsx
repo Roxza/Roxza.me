@@ -20,8 +20,9 @@ const Footer = () => {
                     This website is open source on GitHub.
                   </a>
                 </p>
-                <p className="text-center text-black dark:text-white float-right">
-                  Developed with ❤️ by Roxza
+                <p className="font-light text-center text-black dark:text-white float-right">
+                  Designed with{" "}
+                  <i className="fal fa-heart mx-1 text-pink-400" /> by Roxza
                 </p>
               </center>
             </div>
