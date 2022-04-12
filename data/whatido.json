@@ -1,0 +1,28 @@
+{
+    "whatido": [
+        {
+          "emoji": "⚙",
+          "name": "Building Project",
+          "description":
+            "I'm very active on Github to create open-source projects or personal projects, sometimes I also contribute to open-source projects."
+        },
+        {
+          "emoji": "📗",
+          "name": "Writing",
+          "description":
+            "I also often write to summarize my learning results. I usually write on medium or personal blogs."
+        },
+        {
+          "emoji": "📦",
+          "name": "Collaboration",
+          "description":
+            "I usually collaborate using Github and have collaborated with other programmers several times."
+        },
+        {
+          "emoji": "🎨",
+          "name": "Design",
+          "description":
+            "besides coding, I also like design, I usually design using Figma or similar tools."
+        }
+      ]
+}
