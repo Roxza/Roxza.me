@@ -1,8 +1,10 @@
-import tech from "../data/tech.json";
 import Link from "next/link";
 import Image from "next/image";
 import swr from "../lib/swr";
 
+/* Data */
+import tech from "../data/tech.json";
+import whatido from "../data/whatido.json";
 /* Cards */
 import Repositories from "../components/Card/repositories";
 import Spotify from "../components/Card/spotify";
@@ -60,24 +62,43 @@ export default function Home() {
                   className={`${user.user.status} border-gray-300 dark:border-[#080808] border-4 w-[24px] h-[24px] rounded-full absolute bottom-0 right-4`}
                 ></div>
               </div>
-              {!user || user.user.spotify === null ? (
+              {user.user.vsc === null ? (
                 <>
-                  <h1 className="mt-6 dark:text-gray-300 text-black text-2xl text-center">
-                    “{user.quotes.text}”
-                  </h1>
-                  <h1 className="py-2 dark:text-gray-400 text-black text-xl text-center">
-                    {user.quotes.say}
-                  </h1>
+                  {user.user.spotify === null ? (
+                    <>
+                      <>
+                        <h1 className="mt-6 dark:text-gray-300 text-black text-2xl text-center">
+                          “{user.quotes.text}”
+                        </h1>
+                        <h1 className="py-2 dark:text-gray-400 text-black text-xl text-center">
+                          {user.quotes.say}
+                        </h1>
+                      </>
+                    </>
+                  ) : (
+                    <>
+                      <iframe
+                        src="https://linkcord.js.org/api/v3/widget/939851664389730304?type=spotify_large&theme=dark"
+                        width="450"
+                        height="140"
+                        allowtransparency="true"
+                        frameBorder="0"
+                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                      />
+                    </>
+                  )}
                 </>
               ) : (
-                <iframe
-                  src="https://linkcord.swoth.xyz/api/v1/widget/939851664389730304?type=spotify&amp;lang=en&amp;theme=dark&amp;align=left&amp;bg=080808"
-                  width="450"
-                  height="140"
-                  allowtransparency="true"
-                  frameBorder="0"
-                  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-                />
+                <>
+                  <iframe
+                    src="https://linkcord.js.org/api/v3/widget/939851664389730304?type=vsc&theme=dark"
+                    width="450"
+                    height="140"
+                    allowtransparency="true"
+                    frameBorder="0"
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                  />
+                </>
               )}
             </div>
           </div>
@@ -117,17 +138,17 @@ export default function Home() {
           <div className="p-10">
             <div className="py-5 space-y-5">
               <h1 className="text-2xl font-bold leading-9 tracking-tight text-black dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
-                <span className="text-yellow-500">What</span> I Do
+                <span className="text-yellow-500">What</span> I Do 💭
               </h1>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <Whatido data={user.whatido} />
+                <Whatido data={whatido.whatido} />
               </div>
             </div>
           </div>
           <div className="p-10">
             <div className="py-5 space-y-5">
               <h1 className="text-2xl font-bold leading-9 tracking-tight text-black dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
-                <span className="text-blue-500">Technologies</span> I use
+                <span className="text-blue-500">Technologies</span> I use 💻
               </h1>
               <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full gap-2 items-center mt-2">
                 <Technologies data={tech.tech} />
